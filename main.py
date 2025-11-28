@@ -66,7 +66,7 @@ class MyWidget(QMainWindow):
         if self.do_paint:
             qp = QPainter()
             qp.begin(self)
-            qp.setBrush(QColor(255, 255, 0))
+            qp.setBrush(QColor(random.randint(1, 256), random.randint(1, 256), random.randint(1, 256)))
 
             s = random.randint(10, 100)
             max_x = self.size.width() - s
